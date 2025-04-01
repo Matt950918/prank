@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>愚人節無限彈窗</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 20%;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>點擊下面的按鈕</h1>
+  <button id="alertButton">點我試試！</button>
+
+  <script>
+    document.getElementById("alertButton").addEventListener("click", () => {
+      // 每隔1秒彈出一次警告視窗
+      setInterval(() => {
+        alert("哈哈！你中招了！");
+      }, 1000);
+    });
+  </script>
+</body>
+</html>
